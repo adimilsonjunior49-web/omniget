@@ -69,7 +69,7 @@ if (Test-Path $ShaFile) {
     }
 }
 
-Write-Host "==> [5/5] Verificando registro do omniget-cli no PATH do usuário..." -ForegroundColor Cyan
+Write-Host "==> [5/6] Verificando registro do omniget-cli no PATH do usuário..." -ForegroundColor Cyan
 $UserPath = [System.Environment]::GetEnvironmentVariable("Path", "User")
 if ($UserPath -notlike "*$DistDir*") {
     [System.Environment]::SetEnvironmentVariable("Path", "$UserPath;$DistDir", "User")
@@ -77,6 +77,21 @@ if ($UserPath -notlike "*$DistDir*") {
     Write-Host "    [OK] Diretório $DistDir adicionado ao PATH do usuário." -ForegroundColor Green
 } else {
     Write-Host "    [OK] Diretório $DistDir já consta no PATH do usuário." -ForegroundColor Green
+}
+
+Write-Host "==> [6/6] Criando atalho na Área de Trabalho (Desktop)..." -ForegroundColor Cyan
+$DesktopPath = [Environment]::GetFolderPath("Desktop")
+$ShortcutPath = Join-Path $DesktopPath "OmniGet.lnk"
+$TargetExe = Join-Path $DistDir "OmniGet.exe"
+if (Test-Path $TargetExe) {
+    $WshShell = New-Object -ComObject WScript.Shell
+    $Shortcut = $WshShell.CreateShortcut($ShortcutPath)
+    $Shortcut.TargetPath = $TargetExe
+    $Shortcut.WorkingDirectory = $DistDir
+    $Shortcut.IconLocation = "$TargetExe,0"
+    $Shortcut.Description = "OmniGet v0.15.0 - Gerenciador de Downloads Universal (100% Parametrizado)"
+    $Shortcut.Save()
+    Write-Host "    [OK] Atalho criado em: $ShortcutPath" -ForegroundColor Green
 }
 
 Write-Host "`n[SUCESSO] OmniGet v0.15.0 instalado e 100% parametrizado!" -ForegroundColor Green
