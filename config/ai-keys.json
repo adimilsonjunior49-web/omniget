@@ -1,0 +1,36 @@
+[
+  {
+    "id": "freellmapi-local-router",
+    "name": "FreeLLMAPI Router Local (Custo Zero)",
+    "kind": "custom",
+    "base_url": "http://localhost:3001/v1",
+    "key": "freellmapi-2157a362e1cfa893332caaa48df54c92974dcd5a04ab0d94",
+    "access_token": "",
+    "user_id": "",
+    "model": "auto",
+    "notes": "Roteador local multi-modelo (Claude Sonnet 4.5, Opus 4.5, Haiku 4.5, Fusion, Auto)",
+    "created": 1762467600,
+    "last_ok": true,
+    "last_checked": 1762467600,
+    "balance": "Ilimitado (Local)",
+    "models": 12,
+    "error": null
+  },
+  {
+    "id": "ollama-local-zero-cost",
+    "name": "Ollama Local (Offline)",
+    "kind": "ollama",
+    "base_url": "http://localhost:11434/v1",
+    "key": "",
+    "access_token": "",
+    "user_id": "",
+    "model": "qwen2.5:3b",
+    "notes": "Modelos locais: qwen2.5:3b, qwen2.5-coder:1.5b, llama3.2:1b",
+    "created": 1762467600,
+    "last_ok": true,
+    "last_checked": 1762467600,
+    "balance": "Local Offline",
+    "models": 3,
+    "error": null
+  }
+]

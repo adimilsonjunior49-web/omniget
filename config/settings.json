@@ -1,0 +1,126 @@
+{
+  "app_settings": {
+    "schema_version": 1,
+    "appearance": {
+      "theme": "dark",
+      "language": "pt"
+    },
+    "download": {
+      "default_output_dir": "C:\\Users\\Home\\.gemini\\antigravity\\scratch\\Downloads",
+      "always_ask_path": false,
+      "video_quality": "best",
+      "skip_existing": true,
+      "download_attachments": true,
+      "download_descriptions": true,
+      "embed_metadata": true,
+      "embed_thumbnail": true,
+      "write_nfo_sidecar": false,
+      "clipboard_detection": true,
+      "auto_download_on_paste": false,
+      "filename_template": "%(title).200s [%(id)s].%(ext)s",
+      "organize_by_platform": true,
+      "download_subtitles": true,
+      "include_auto_subtitles": true,
+      "caption_locale": "pt",
+      "keep_vtt": false,
+      "translate_metadata": false,
+      "youtube_sponsorblock": true,
+      "sponsorblock_mode": "remove",
+      "sponsorblock_categories": [
+        "sponsor",
+        "selfpromo",
+        "interaction"
+      ],
+      "split_by_chapters": false,
+      "live_from_start": false,
+      "speed_limit": "",
+      "hotkey_enabled": true,
+      "hotkey_binding": "CmdOrCtrl+Shift+D",
+      "clip_hotkey_enabled": true,
+      "clip_hotkey_binding": "CmdOrCtrl+Shift+B",
+      "music_hotkey_enabled": true,
+      "music_hotkey_binding": "CmdOrCtrl+Shift+M",
+      "music_audio_format": "mp3",
+      "extra_ytdlp_flags": [],
+      "copy_to_clipboard_on_hotkey": true,
+      "cookie_file": "",
+      "always_use_managed_cookies": true,
+      "continuous_lecture_numbers": true,
+      "bilibili_danmaku_enabled": false,
+      "bilibili_danmaku_format": "xml",
+      "bilibili_container": "mp4",
+      "bilibili_nfo_enabled": false,
+      "bilibili_cover_sidecar": false,
+      "bilibili_cover_format": "jpg",
+      "bilibili_naming_video": "{title}",
+      "bilibili_naming_multi_part": "{parent_title}/P{page} - {leaf_title}",
+      "bilibili_naming_bangumi": "{series_title}/Season {season_number}/{episode_number_pad2} - {episode_title}",
+      "bilibili_naming_cheese": "{series_title}/{section_title}/{episode_number_pad2} - {episode_title}",
+      "bilibili_naming_collection": "{collection_title}/{title}",
+      "bilibili_cdn_hosts": "",
+      "bilibili_cdn_prefer_alternatives": false,
+      "bilibili_preferred_qn": 200,
+      "bilibili_preferred_codec": 20,
+      "bilibili_preferred_audio_qn": 30300
+    },
+    "advanced": {
+      "max_concurrent_segments": 20,
+      "max_retries": 5,
+      "max_concurrent_downloads": 3,
+      "concurrent_fragments": 16,
+      "stagger_delay_ms": 150,
+      "torrent_listen_port": 6881,
+      "torrent_auto_trackers": true,
+      "torrent_upnp": true,
+      "prevent_sleep": true,
+      "cookies_from_browser": "chrome",
+      "twitter_manual_cookie": "",
+      "user_agent": "",
+      "insecure_tls": false
+    },
+    "telegram": {
+      "concurrent_downloads": 3,
+      "fix_file_extensions": true
+    },
+    "proxy": {
+      "enabled": false,
+      "proxy_type": "http",
+      "host": "",
+      "port": 8080,
+      "username": "",
+      "password": ""
+    },
+    "onboarding_completed": true,
+    "start_with_system": false,
+    "start_minimized": false,
+    "portable_mode": true,
+    "legal_acknowledged": true,
+    "last_download_options": {
+      "mode": "auto",
+      "quality": "best"
+    },
+    "typography": {
+      "font_display": "Bricolage Grotesque Variable",
+      "font_body": "Inter",
+      "font_mono": "IBM Plex Mono",
+      "line_height_base": 1.55,
+      "spacing_scale": 1.0,
+      "preset_name": "omniget-default"
+    },
+    "rpc": {
+      "enabled": true,
+      "app_id": "1502867748353478656",
+      "large_image_key": "omniget_music"
+    },
+    "bridge": {
+      "enabled": true,
+      "port": 47720,
+      "token": "omniget-local-bridge-token-2026"
+    },
+    "accessibility": {
+      "reduce_motion": false,
+      "reduce_transparency": false,
+      "disable_haptics": false
+    }
+  }
+}

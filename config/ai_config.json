@@ -1,0 +1,8 @@
+{
+  "provider": "local",
+  "kind": "custom",
+  "openai_key": "freellmapi-2157a362e1cfa893332caaa48df54c92974dcd5a04ab0d94",
+  "anthropic_key": "",
+  "local_base_url": "http://localhost:3001/v1",
+  "model": "auto"
+}
